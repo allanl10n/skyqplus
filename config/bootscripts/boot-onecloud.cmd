@@ -59,7 +59,7 @@ setenv bootargs "${bootargs} ${extraargs}"
 # Booting
 fatload ${bootdev} 0x20800000 /uImage || exit 1
 fatload ${bootdev} 0x22000000 /uInitrd || exit 1
-fatload ${bootdev} 0x21800000 /dtb/meson8b-onecloud.dtb || exit 1
+fatload ${bootdev} 0x21800000 /dtb/meson8b-mxq.dtb || exit 1
 
 bootm 0x20800000 0x22000000 0x21800000
 
